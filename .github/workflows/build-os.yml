@@ -56,7 +56,7 @@ jobs:
           context: .
           file: ./Containerfile
           push: true
-          tags: latest ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           # Optimalisatie voor snellere opeenvolgende builds via GitHub cache
           cache-from: type=gha
