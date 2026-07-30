@@ -4,5 +4,5 @@ FROM ghcr.io/zirconium-dev/zirconium:latest
 RUN dnf -y install git && \
     dnf clean all
 
-RUN hostnamectl set-hostname jepara
+#RUN hostnamectl set-hostname jepara
 RUN systemctl enable sshd
