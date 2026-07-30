@@ -56,9 +56,8 @@ jobs:
           context: .
           file: ./Containerfile
           push: true
-          tags: ${{ id.meta.outputs.tags }}
-          labels: ${{ id.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }} ${{ github.sha }}
+          labels: ${{ steps.meta.outputs.labels }}
           # Optimalisatie voor snellere opeenvolgende builds via GitHub cache
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
