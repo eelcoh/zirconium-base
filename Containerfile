@@ -4,5 +4,4 @@ FROM ghcr.io/zirconium-dev/zirconium:latest
 RUN dnf -y install git zsh atuin zoxide && \
     dnf clean all
 
-RUN chsh -s /bin/zsh
 RUN systemctl enable sshd
