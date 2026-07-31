@@ -4,7 +4,8 @@ FROM ghcr.io/zirconium-dev/zirconium:latest
 RUN dnf -y install git zsh atuin zoxide \
     virt-manager qemu-kvm libvirt \
     podman-compose distrobox \
-    sysprof traceroute htop tree && \
+    sysprof traceroute htop tree \
+    ptyxis && \
     dnf clean all
 
 RUN systemctl enable sshd
