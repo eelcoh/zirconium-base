@@ -3,7 +3,7 @@ FROM ghcr.io/zirconium-dev/zirconium:latest
 # Installeer Git en maak de dnf cache direct leeg om de image compact te houden
 RUN dnf -y install git zsh atuin zoxide \
     virt-manager qemu-kvm libvirt \
-    distrobox \
+    podman-compose distrobox \
     sysprof traceroute htop tree && \
     dnf clean all
 
