@@ -11,3 +11,5 @@ RUN curl -fsSL https://mise.jdx.dev/rpm/mise.repo -o /etc/yum.repos.d/mise.repo 
 
 RUN systemctl enable sshd
 RUN systemctl enable libvirtd
+
+RUN bootc container lint
