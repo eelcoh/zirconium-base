@@ -6,7 +6,7 @@ RUN curl -fsSL https://mise.jdx.dev/rpm/mise.repo -o /etc/yum.repos.d/mise.repo 
     virt-manager qemu-kvm libvirt \
     podman-compose distrobox \
     sysprof traceroute htop tree \
-    wl-clipboard ptyxis mise && \
+    wl-clipboard ptyxis mise jq httpie && \
     dnf clean all
 
 RUN systemctl enable sshd
