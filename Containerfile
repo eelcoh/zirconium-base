@@ -7,7 +7,7 @@ RUN curl -fsSL https://mise.jdx.dev/rpm/mise.repo -o /etc/yum.repos.d/mise.repo 
     virt-manager qemu-kvm libvirt \
     podman-compose distrobox \
     sysprof traceroute htop tree \
-    wl-clipboard ptyxis mise jq httpie && \
+    wl-clipboard ptyxis mise jq httpie gh && \
     dnf clean all
 
 # make sure required services are enabled
